@@ -8,7 +8,7 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts
 
-// Aufgabe 1: Erstelle das Hauptfenster mit Breite 480 und Höhe 680.
+// Aufgabe 1: Erstelle das Hauptfenster (ApplicationWindow) mit Breite 480 und Höhe 680.
 //            Gib ihm den Titel "🍪 Cookie Clicker"
 ___ {
     width: ___
@@ -18,6 +18,7 @@ ___ {
 
     // ── Hintergrund ──────────────────────────────────────────
     Rectangle {
+        id: root
         anchors.fill: parent
 
         // Aufgabe 2: Setze die Hintergrundfarbe auf "#1a0a00" (Dunkelbraun)
@@ -190,7 +191,6 @@ ___ {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        var root = parent.parent.parent.parent
                         if (root.___ >= 50) {
                             root.cookies -= ___
                             root.___ += 1
@@ -236,7 +236,6 @@ ___ {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        var root = parent.parent.parent.parent
                         if (root.cookies >= ___) {
                             root.___ -= 100
                             root.grandmaCount += ___
@@ -280,7 +279,6 @@ ___ {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        var root = parent.parent.parent.parent
                         if (root.cookies >= ___) {
                             root.cookies -= ___
                             root.___ += 1
@@ -314,7 +312,6 @@ ___ {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        var root = parent.parent.parent.parent
                         // Aufgabe 20 – setze hier alle Werte zurück:
                         root.___ = 0
                         root.___ = 1
