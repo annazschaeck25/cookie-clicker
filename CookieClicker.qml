@@ -6,6 +6,7 @@
 
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import QtQuick.Layouts
 
 // Aufgabe 1: Erstelle das Hauptfenster mit Breite 480 und Höhe 680.
 //            Gib ihm den Titel "🍪 Cookie Clicker"
@@ -157,16 +158,29 @@ ___ {
                     anchors.margins: 10
                     spacing: 10
 
-                    Text { text: "👆"; font.pixelSize: 28; anchors.verticalCenter: parent.verticalCenter }
+                    Text { 
+                        text: "👆"
+                        font.pixelSize: 28
+                        anchors.verticalCenter: parent.verticalCenter 
+                    }
 
                     Column {
                         anchors.verticalCenter: parent.verticalCenter
                         spacing: 2
-                        Text { text: "Besserer Finger"; color: "#f0d080"; font.pixelSize: 14; font.bold: true }
-                        Text { text: "+1 Keks / Klick  –  Kosten: 50 🍪"; color: "#a08040"; font.pixelSize: 11 }
-                    }
 
-                    Item { Layout.fillWidth: true; width: 1 }
+                        Text { 
+                            text: "Besserer Finger"
+                            color: "#f0d080"
+                            font.pixelSize: 14
+                            font.bold: true 
+                        }
+
+                        Text { 
+                            text: "+1 Keks / Klick  –  Kosten: 50 🍪"
+                            color: "#a08040"
+                            font.pixelSize: 11 
+                        }
+                    }
                 }
 
                 // Aufgabe 16: Füge eine MouseArea hinzu.
