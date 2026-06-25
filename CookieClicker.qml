@@ -120,12 +120,6 @@ ___ {
                     onClicked: {
                         parent.parent.parent.parent.___ += parent.parent.parent.parent.___
                     }
-
-                    // Aufgabe 15: Beim Drücken soll der Keks leicht nach unten rutschen.
-                    //             Setze parent.y auf 4, wenn pressed true ist, sonst auf 0.
-                    onPressedChanged: {
-                        parent.y = pressed ? ___ : ___
-                    }
                 }
             }
 
